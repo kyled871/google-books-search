@@ -1,0 +1,22 @@
+.search {
+    width: 80%;
+}
+
+h5 {
+    color: white;
+    font-size: 28px;
+}
+
+.bookSearch {
+    border: solid black 2px;
+    background-color: #fbbc05;
+}
+
+.searchBar {
+    border: solid black 2px;
+}
+
+.results {
+    border: solid black 2px;
+    background-color: #34a853;
+}
