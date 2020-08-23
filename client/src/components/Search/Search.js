@@ -4,6 +4,8 @@ import API from "../../utils/googleAPI"
 
 class Search extends Component {
 
+    
+
     state = {
         books: [],
         query: "",
@@ -12,6 +14,10 @@ class Search extends Component {
         description: "",
         image: "",
         link: ""
+    }
+
+    componentDidMount() {
+        // 
     }
 
     handleInputChange = event => {
@@ -24,7 +30,7 @@ class Search extends Component {
     handleFormSubmit = event => {
         event.preventDefault()
 
-        API.search(this.state.query)
+        API.getSearch(this.state.query)
         .then(results => {
             console.log(results.data)
         })
